@@ -1,0 +1,125 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: aqua;
+}
+
+h1,
+form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+input,
+#btn {
+	padding: 10px;
+	font-size: 18pxss;
+	margin-top: 50px;
+	background-color: azure;
+	border: none;
+}
+#btn {
+	color: red;
+	cursor: pointer;
+	background-color: rgb(240, 252, 4);
+	transition: all 0.3s ease-in;
+}
+#btn:hover {
+	background-color: blueviolet;
+	color: white;
+}
+
+.todo-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.todo-list {
+	min-width: 30%;
+	list-style: none;
+}
+
+.todo {
+	background-color: aliceblue;
+	margin: 5px 0px;
+	color: rgb(6, 6, 6);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 20px;
+	transition: all 0.5s ease-in;
+}
+
+.todo li {
+	flex: 1;
+}
+
+.done,
+.delete {
+	background-color: aquamarine;
+	border: none;
+	font-size: 20px;
+	cursor: pointer;
+	padding: 5px;
+	transition: all 0.5s ease-in;
+	color: white;
+}
+
+.done {
+	background-color: green;
+}
+.delete {
+	background-color: rgb(234, 88, 88);
+}
+
+.todo-item {
+	padding: 0px 15px;
+}
+
+.fa-check,
+.fa-trash {
+	pointer-events: none;
+}
+
+.completed {
+	text-decoration: line-through;
+	opacity: 0.5;
+	transition: all 0.5s ease-in;
+}
+
+.fall {
+	transform: translateY(100px) rotateZ(90deg);
+	opacity: 0;
+}
+
+/* .todo-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.todo-list {
+	min-width: 40%;
+	list-style: none;
+}
+
+.todo {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: yellow;
+	margin: 10px;
+	padding: 5px;
+}
+
+.done,
+.delete {
+	pointer-events: none;
+	padding: 10px;
+} */
